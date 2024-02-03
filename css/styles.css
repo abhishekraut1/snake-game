@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cornsilk;
+}
+
+.head{
+    background: linear-gradient(rgb(242, 127, 56) , yellow);
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+.food{
+    background: url("../img/food2.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+}
+
+
+#board{
+    background: linear-gradient(#81e893,#dfe288);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    margin-left: 13rem;
+}
+
+#scoreBox{
+    /* position: absolute;
+    top: 9px;
+    right: 200px; */
+    font-size: 39px;
+    font-weight: bold;
+    font-family: cursive;    
+}
+
+#hiscoreBox{
+    /* position: absolute;
+    top: 60px;
+    right: 200px; */
+    font-size: 39px;
+    font-weight: bold;
+    font-family: cursive;    
+}
+
+#scoreBoard{
+    margin-bottom: 41rem;
+    margin-left: 2rem;
+}
+
+.beforeStart{
+    position: absolute;
+    border: 0.4rem solid rgb(36, 140, 105);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: rgb(37, 155, 114);
+    padding: 2rem;
+    border-radius: 1rem;
+    left: 17rem;
+}
+
+.vanish{
+    display: none;
+}
